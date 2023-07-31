@@ -26,8 +26,9 @@
 <body class="font-manrope">
     <header>
         <!-- navbar section -->
-        <nav class="my-12 mx-5 lg:mx-20">
-            <div class="navbar lg:bg-[#F85559] h-28 rounded-full gap-44 justify-between items-center px-12 py-8">
+        <nav class="my-12 mx-2 md:mx-12 lg:mx-20">
+            <div
+                class="navbar lg:bg-[#F85559] h-28 rounded-full gap-44 justify-between items-center px-5 md:px-7 lg:px-12 py-8">
                 <div class="navbar-start gap-44 sm:w-full md:w-full justify-between">
 
                     <div class="navbar-center hidden lg:flex">
@@ -64,19 +65,76 @@
                 <form class="hidden lg:flex bg-white dark:bg-gray-700 rounded-full p-2 shadow-md">
                     <label for="default-search" class="sr-only">Search</label>
                     <div class="relative flex items-center w-full">
-                      <input type="search" id="default-search" class="w-full p-2 text-sm text-gray-900 dark:text-white rounded-full bg-transparent focus:outline-none" placeholder="Search here" required/>
-                      <div class="absolute inset-y-0 right-2 flex items-center pointer-events-none">
-                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                        </svg>
-                      </div>
+                        <input type="search" id="default-search"
+                            class="w-full p-2 text-sm text-gray-900 dark:text-white rounded-full bg-transparent focus:outline-none"
+                            placeholder="Search here" required />
+                        <div class="absolute inset-y-0 right-2 flex items-center pointer-events-none">
+                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                            </svg>
+                        </div>
                     </div>
-                  </form>
+                </form>
 
             </div>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <!-- banner section with slider -->
+        <section class="mx-2 md:mx-12 lg:mx-20">
+            <!-- Code-2 (Hero Section with Code-1 as Background) -->
+            <div class="hero h-screen lg:h-[600px] rounded-lg relative">
+                <!-- Code-1 (DaisyUI Carousel as Background) -->
+                <div class="carousel w-full h-full absolute top-0 left-0 rounded-lg">
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <img src="images/banner1.png" class="w-full object-cover"/>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-30">
+                            <a href="#slide4" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img src="images/banner2.png" class="w-full" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-30">
+                            <a href="#slide1" class="btn btn-circle">❮</a>
+                            <a href="#slide3" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <img src="images/banner3.png" class="w-full" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-30">
+                            <a href="#slide2" class="btn btn-circle">❮</a>
+                            <a href="#slide4" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide4" class="carousel-item relative w-full">
+                        <img src="images/banner4.png" class="w-full" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-30">
+                            <a href="#slide3" class="btn btn-circle">❮</a>
+                            <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-overlay bg-gradient-to-b from-[#121212] to-transparent bg-opacity-[12%] rounded-lg z-20">
+                </div>
+                <div class="text-center text-neutral-content z-30">
+                    <div class="max-w-screen-lg">
+                        <h1 class="mb-5 text-7xl font-extrabold">Exotic tastes at your
+                            <br>
+                            doorstep
+                        </h1>
+                        <p class="mb-5 text-xl font-medium">We supply highly quality organic products</p>
+                        <button
+                            class="btn btn-primary bg-[#F85559] border-none hover:bg-black text-xl font-extrabold">Shop
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 
